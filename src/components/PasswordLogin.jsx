@@ -1,18 +1,34 @@
+import { Eye, EyeOff } from "lucide-react";
+import { useState } from "react";
+
 function PasswordLogin() {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
-    <div className="flex justify-center space-y-4 p-6 flex-col">
+    <div className="w-full flex flex-col items-center relative">
       <h1
-        className="text-stone-50 text-shadow-2xs font-bold text-shadow-sky-300 text-5xl flex justify-center "
+        className="text-white font-bold mb-2 text-5xl"
         style={{ textShadow: "4px 4px 4px rgba(20, 184, 166, 1)" }}
       >
         SENHA
       </h1>
-      <input
-        className="text-center rounded-xl px-16 py-5 outline-teal-500"
-        type="text"
-        placeholder="Digite sua senha"
-      />
+
+      <div className="relative w-full">
+        <input
+          className="w-full text-center rounded-2xl px-6 py-4 outline-teal-500 bg-white"
+          type={showPassword ? "text" : "password"}
+          placeholder="Digite sua senha"
+        />
+        <button
+          type="button"
+          className="absolute right-4 top-1/2 -translate-y-1/2 text-teal-500"
+          onClick={() => setShowPassword(!showPassword)}
+        >
+          {showPassword ? <Eye /> : <EyeOff />}
+        </button>
+      </div>
     </div>
   );
 }
+
 export default PasswordLogin;

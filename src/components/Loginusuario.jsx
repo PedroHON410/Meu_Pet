@@ -1,14 +1,14 @@
 function Userlogin() {
   return (
-    <div className=" flex justify-center space-y-28 p-6 flex-col">
+    <div className="w-full flex flex-col items-center mb-6">
       <h1
-        className="text-stone-50 text-shadow-2xs font-bold text-shadow-sky-300 text-5xl flex justify-center  "
+        className="text-white font-bold mb-2 text-5xl "
         style={{ textShadow: "4px 4px 4px rgba(20, 184, 166, 1)" }}
       >
         USUÁRIO
       </h1>
       <input
-        className="border  text-center rounded-xl px-16 py-5 outline-teal-500 "
+        className="w-full text-center rounded-2xl px-6 py-4 outline-teal-500 bg-white "
         type="text"
         placeholder="Digite seu email"
       />
