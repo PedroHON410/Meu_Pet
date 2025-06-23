@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function App() {
   return (
-    <div class="bg-gradient-to-l from-yellow-500 via-yellow-600 to-orange-500 h-screen w-screen flex justify-center p-6">
+    <div class="bg-gradient-to-l from-yellow-500 via-yellow-600 to-orange-500 h-screen w-screen flex justify-center p-6 space-y-5">
       <div>
         <h1
           className="text-teal-500  text-shadow-lg/30 text-8xl font-bold text-center "
