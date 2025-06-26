@@ -1,24 +1,25 @@
 import Userlogin from "./components/Loginusuario";
 import PasswordLogin from "./components/PasswordLogin";
+import pata from "./assets/images/pata.png";
 
 function App() {
   return (
-<<<<<<< HEAD
-    <div className="bg-gradient-to-l from-yellow-400 via-yellow-500 to-orange-400 min-h-screen w-screen flex items-center justify-center relative overflow-hidden">
-      <div className="flex flex-col items-center w-full max-w-md px-6 ">
-=======
-    <div class="bg-gradient-to-l from-yellow-500 via-yellow-600 to-orange-500 h-screen w-screen flex justify-center p-6 space-y-5">
-      <div>
->>>>>>> dcfbdfd (Adição de um readme e imagens)
+    <div className="bg-gradient-to-l from-yellow-400 via-yellow-500 to-orange-400 min-h-screen  w-screen flex flex-col overflow-hidden">
+      <header className="py-6 text-center">
         <h1
-          className="text-teal-500 text-8xl font-bold text-center "
+          className="text-teal-500 text-8xl font-bold text-center py-3 "
           style={{ textShadow: "4px 4px 4px rgba(0, 0, 0, 1)" }}
         >
           <a href="">MEU PET</a>
         </h1>
-        <Userlogin />
-        <PasswordLogin />
-      </div>
+      </header>
+      <main className="flex flex-1 items-center justify-center">
+        <div className="w-full max-w-md px-4">
+          <Userlogin />
+          <PasswordLogin />
+        </div>
+        <img src={pata} alt="pata" />
+      </main>
     </div>
   );
 }

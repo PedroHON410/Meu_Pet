@@ -7,7 +7,7 @@ function PasswordLogin() {
   return (
     <div className="w-full flex flex-col items-center relative">
       <h1
-        className="text-white font-bold mb-2 text-5xl"
+        className="text-white font-bold text-5xl"
         style={{ textShadow: "4px 4px 4px rgba(20, 184, 166, 1)" }}
       >
         SENHA
