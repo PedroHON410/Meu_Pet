@@ -1,7 +1,6 @@
 import Userlogin from "./components/Loginusuario";
 import PasswordLogin from "./components/PasswordLogin";
-import pata from "./assets/images/pata.png";
-
+import pata1 from "./assets/images/pata.png";
 function App() {
   return (
     <div className="bg-gradient-to-l from-yellow-400 via-yellow-500 to-orange-400 min-h-screen  w-screen flex flex-col overflow-hidden">
@@ -13,12 +12,16 @@ function App() {
           <a href="">MEU PET</a>
         </h1>
       </header>
-      <main className="flex flex-1 items-center justify-center">
-        <div className="w-full max-w-md px-4">
+      <main className="flex flex-1 items-center justify-center relative">
+        <div className="w-full max-w-md px-4 relative z-10">
+          <img
+            src={pata1}
+            alt="pata"
+            className=" absolute w-109px opacity-95 z-[-1] pointer-events-none"
+          />
           <Userlogin />
           <PasswordLogin />
         </div>
-        <img src={pata} alt="pata" />
       </main>
     </div>
   );
