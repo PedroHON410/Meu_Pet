@@ -14,17 +14,24 @@ function App() {
           <a href="">MEU PET</a>
         </h1>
       </header>
-      <main className=" py-24 flex items-center justify-center relative">
-        <div className="w-full max-w-md px-4 relative ">
+      <main className=" py-40 flex items-center justify-center relative">
+        <div className="w-full max-w-md px-4 relative z-40 ">
           <Userlogin />
           <PasswordLogin />
-          <img
-            src={pata1}
-            alt="pata"
-            className=" absolute opacity-95 py-32 right-3 scale-150 "
-          />
+          <div className=" bg-teal-500 text-center text-white font-bold text-2xl  px-4 py-2 rounded-md">
+            <a href="">Cadastre-se agora!</a>
+          </div>
         </div>
-        <img src={pata2} alt="vaárias pegadas" className="absolute w-11/12 " />
+        <img
+          src={pata1}
+          alt="pata"
+          className=" absolute w-11/12  left-12 scale-50 flex justify-center"
+        />
+        <img
+          src={pata2}
+          alt="vaárias pegadas"
+          className="absolute w-11/12 flex justify-center "
+        />
         <img
           src={ossos}
           alt="vaárias pegadas"

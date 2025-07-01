@@ -8,7 +8,7 @@ function Userlogin() {
         USUÁRIO
       </h1>
       <input
-        className="w-full text-center rounded-2xl px-6 py-4 outline-teal-500 bg-white "
+        className="w-full text-center rounded-2xl px-6 py-4 outline-teal-500 bg-white font-medium"
         type="text"
         placeholder="Digite seu email"
       />

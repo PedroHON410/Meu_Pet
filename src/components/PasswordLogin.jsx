@@ -15,7 +15,7 @@ function PasswordLogin() {
 
       <div className="relative w-full">
         <input
-          className="w-full text-center rounded-2xl px-6 py-4 outline-teal-500 bg-white"
+          className="w-full text-center rounded-2xl px-6 py-4 outline-teal-500 bg-white font-medium"
           type={showPassword ? "text" : "password"}
           placeholder="Digite sua senha"
         />
