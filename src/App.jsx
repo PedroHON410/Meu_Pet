@@ -15,10 +15,10 @@ function App() {
         </h1>
       </header>
       <main className=" py-40 flex items-center justify-center relative">
-        <div className="w-full max-w-md px-4 relative z-40 ">
+        <div className="w-full max-w-md space-y-20 px-4 relative z-40 ">
           <Userlogin />
           <PasswordLogin />
-          <div className=" bg-teal-500 text-center text-white font-bold text-2xl  px-4 py-2 rounded-md">
+          <div className="border text-border- bg-teal-500 text-center text-white font-bold text-2xl  px-4 py-2 rounded-md">
             <a href="">Cadastre-se agora!</a>
           </div>
         </div>
