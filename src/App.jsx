@@ -19,7 +19,7 @@ function App() {
           <Userlogin />
           <PasswordLogin />
           <div className="border text-border- bg-teal-500 text-center text-white font-bold text-2xl  px-4 py-2 rounded-md">
-            <a href="">Cadastre-se agora!</a>
+            <a href="http://localhost:5173/Create_count">Cadastre-se agora!</a>
           </div>
         </div>
         <img
