@@ -7,12 +7,12 @@ function Createcount() {
       >
         Cadastro de Conta
       </h1>
-      <div className="bg-teal-500 rounded-lg shadow-lg px-8 py-52 shadow-black w-full max-w-md my-20 flex flex-col items-center">
-        <h2 className=" text-white text-3xl font-bold mb-6 text-shadow-2xs text-shadow-sky-300">
+      <div className="bg-teal-500 rounded-lg shadow-lg px-8 py-44 shadow-black w-full max-w-md my-12 flex flex-col ">
+        <h2 className=" text-white text-3xl font-bold mb-6 text-shadow-2xs text-shadow-sky-300 text-center -my-36 shadow-lg text-shadow-black ">
           Digite seu nome completo
         </h2>
         <input type="text" className="" />
-        <h2 className="text-white text-3xl font-bold mb-6  shadow-black">
+        <h2 className="text-white text-3xl font-bold mb-6  shadow-black text-center">
           Digite seu email
         </h2>
         <input type="email" className="" />

@@ -14,14 +14,22 @@ function App() {
           <a href="">MEU PET</a>
         </h1>
       </header>
-      <main className=" py-40 flex items-center justify-center relative">
-        <div className="w-full max-w-md space-y-20 px-4 relative z-40 ">
+      <main className=" py-32 flex items-center justify-center relative">
+        <div className="w-full max-w-md  px-4 relative z-40 ">
           <Userlogin />
           <PasswordLogin />
-          <div className="border bg-[#01bbb9] text-white px-6 py-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-xl">
+          <div className="my-10 border bg-[#01bbb9] text-white px-4 py-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-xl">
+            <a
+              href=""
+              className="flex justify-center font-bold text-2xl text-shadow-lg shadow-black"
+            >
+              Entrar
+            </a>
+          </div>
+          <div className="my-8 bg-gradient-to-l from-yellow-400/35 to-orange-400/35 text-center border px-4 py-4 rounded-full shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-xl">
             <a
               href="http://localhost:5173/Create_count "
-              className="flex justify-center font-bold text-2xl text-shadow-lg shadow-black"
+              className="text-stone-50 font-bold text-3xl text-shadow-lg  shadow-black"
             >
               Cadastre-se agora!
             </a>
