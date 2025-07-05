@@ -15,13 +15,13 @@ function PasswordLogin() {
 
       <div className="relative w-full">
         <input
-          className="w-full text-center rounded-2xl px-6 py-4 outline-teal-500 bg-white font-medium"
+          className="w-full text-center rounded-2xl px-5 py-4 outline-teal-500 bg-white font-medium"
           type={showPassword ? "text" : "password"}
           placeholder="Digite sua senha"
         />
         <button
           type="button"
-          className="absolute right-4 top-1/2 -translate-y-1/2 text-teal-500"
+          className="absolute right-5 top-1/2 -translate-y-1/2 text-teal-500"
           onClick={() => setShowPassword(!showPassword)}
         >
           {showPassword ? <Eye /> : <EyeOff />}
