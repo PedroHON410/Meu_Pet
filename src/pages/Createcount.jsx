@@ -33,18 +33,19 @@ function Createcount() {
           >
             Crie uma senha
           </h2>
-          <input
-            type={ShowPassword ? "text" : "password"}
-            className="rounded-md py-2 px-4 outline-teal-500"
-            placeholder="Digite sua senha"
-          />
-          <button
-            type="button"
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white"
-            onClick={() => setShowPassword(!ShowPassword)}
-          >
-            {ShowPassword ? <Eye /> : <EyeOff />}
-          </button>
+          <div className="flex ">
+            <input
+              type={ShowPassword ? "text" : "password"}
+              className="rounded-l-lg py-2 px-20 outline-teal-500 text-left"
+            />
+            <button
+              type="button"
+              className=" text-teal-500 bg-white py-2 px-2 rounded-r-lg"
+              onClick={() => setShowPassword(!ShowPassword)}
+            >
+              {ShowPassword ? <Eye /> : <EyeOff />}
+            </button>
+          </div>
         </div>
       </div>
     </div>
