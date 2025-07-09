@@ -26,6 +26,7 @@ function Createcount() {
           Digite seu email
         </h2>
         <input type="email" className="rounded-md py-2 px-4 outline-teal-500" />
+
         <div className="relative w-full">
           <h2
             className="text-white text-3xl font-bold mb-6  shadow-black text-center my-6"
@@ -36,7 +37,7 @@ function Createcount() {
           <div className="flex ">
             <input
               type={ShowPassword ? "text" : "password"}
-              className="rounded-l-lg py-2 px-20 outline-teal-500 text-left"
+              className="rounded-l-lg py-2 pr-40 outline-teal-500 text-left"
             />
             <button
               type="button"
