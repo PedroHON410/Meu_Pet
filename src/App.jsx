@@ -53,7 +53,7 @@ function App() {
         />
         <img
           src={ossos}
-          alt="vaárias pegadas"
+          alt="ossos"
           className="absolute w-11/12 flex justify-center "
         />
       </main>
