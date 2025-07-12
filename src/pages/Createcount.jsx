@@ -33,7 +33,7 @@ function Createcount() {
         <img
           src={pata2create}
           alt="varias pegadas"
-          className=" absolute  left-12 scale-100  "
+          className=" absolute  left-56 scale- -rotate-45 my-56 "
         />
         <h1
           className="text-teal-500 text-8xl font-bold text-center mt-10 mb-10 py-8 "
@@ -94,16 +94,20 @@ function Createcount() {
               </p>
             )}
           </div>
-          <img
-            src={patacreate}
-            alt="pata"
-            className="absolute w-11/12 flex justify-center "
-          />
-          <img
-            src={ossos1}
-            alt="ossos"
-            className="absolute w-11/12 flex justify-center "
-          />
+          <div className="relative w-full flex justify-center mt-8">
+            <img
+              src={patacreate}
+              alt="pata"
+              className="w-60 h-auto object-contain"
+            />
+          </div>
+          <div className="relative w-full flex justify-center mt-4">
+            <img
+              src={ossos1}
+              alt="ossos"
+              className="w-60 h-auto object-contain"
+            />
+          </div>
           <button className="my-9 bg-teal-500 text-white font-bold text-2xl border rounded-lg py-3 px-3  hover:text-teal-500 hover:bg-white  transition-colors duration-300 shadow-md  transform  hover:scale-110 hover:shadow-xl-white hover:border-yellow-400">
             Criar
           </button>
