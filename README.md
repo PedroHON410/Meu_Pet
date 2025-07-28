@@ -34,4 +34,4 @@ Atualmente em fase de transição para site (web app). Futuramente, voltará a t
 
 ## 👀Preview inicial
 
-![Pagina inicial](./Story%20do%20Instagram%20Pet%20Shop%20Verde%20e%20Amarelo/1.png)
+![Pagina inicial](./Story%20do%20Instagram%20Pet%20Shop%20Verde%20e%20Amarelo/5.png)

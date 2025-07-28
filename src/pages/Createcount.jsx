@@ -20,10 +20,6 @@ function Createcount() {
     }
 
     setPasswordError("");
-
-    console.log("Nome:", Name);
-    console.log("Email:", Email);
-    console.log("Senha:", Password);
   };
   return (
     <div className="bg-gradient-to-l from-yellow-400 via-yellow-500 to-orange-400 min-h-screen w-screen flex flex-col items-center">
