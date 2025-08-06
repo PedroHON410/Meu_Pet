@@ -1,8 +1,10 @@
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
+import { useEffect } from "react";
 import patacreate from "../assets/images/pata.png";
 import pata2create from "../assets/images/pata2.png";
 import ossos1 from "../assets/images/ossos.png";
+import api from "../services/api";
 function Createcount() {
   const [ShowPassword, setShowPassword] = useState(false);
   const [Name, setName] = useState("");
@@ -21,6 +23,14 @@ function Createcount() {
 
     setPasswordError("");
   };
+  let users = [];
+  async function getusers(params) {
+    users = await api.get("/usuarios");
+  }
+
+  useEffect(() => {
+    getusers();
+  }, []);
   return (
     <div className="bg-gradient-to-l from-yellow-400 via-yellow-500 to-orange-400 min-h-screen w-screen flex flex-col items-center">
       <form onSubmit={handleSubmit} className="w-full max-w-md">
