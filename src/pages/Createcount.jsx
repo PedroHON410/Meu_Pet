@@ -5,6 +5,8 @@ import patacreate from "../assets/images/pata.png";
 import pata2create from "../assets/images/pata2.png";
 import ossos1 from "../assets/images/ossos.png";
 import api from "../services/api";
+import BackButton from "../components/BackButton";
+
 function Createcount() {
   const [ShowPassword, setShowPassword] = useState(false);
   const [Name, setName] = useState("");
@@ -22,38 +24,40 @@ function Createcount() {
       return;
     }
 
-    setPasswordError("");
+  //   setPasswordError("");
 
-    try {
-      const response = await api.post("/usuarios", {
-        nome: Name,
-        email: Email,
-        senha: Password,
-      });
+  //   try {
+  //     const response = await api.post("/usuarios", {
+  //       nome: Name,
+  //       email: Email,
+  //       senha: Password,
+  //     });
 
-      alert("Conta criada com sucesso!");
-      console.log(response.data);
+  //     alert("Conta criada com sucesso!");
+  //     console.log(response.data);
 
-      // Limpa os campos
-      setName("");
-      setEmail("");
-      setPassword("");
-    } catch (error) {
-      console.error("Erro ao criar conta:", error);
-      alert("Erro ao criar conta. Verifique os dados.");
-    }
-  };
-  let users = [];
-  async function getusers(params) {
-    users = await api.get("/usuarios");
-  }
+  //     setName("");
+  //     setEmail("");
+  //     setPassword("");
+  //   } catch (error) {
+  //     console.error("Erro ao criar conta:", error);
+  //     alert("Erro ao criar conta. Verifique os dados.");
+  //   }
+  // };
+  // let users = [];
+  // async function getusers(params) {
+  //   users = await api.get("/usuarios");
+  // }
 
-  useEffect(() => {
-    getusers();
-  }, []);
+  // useEffect(() => {
+  //   getusers();
+  // }, []);
   return (
     <div className="bg-gradient-to-l from-yellow-400 via-yellow-500 to-orange-400 min-h-screen w-screen flex flex-col items-center">
       <form onSubmit={handleSubmit} className="w-full max-w-md">
+        <div className="flex justify-between items-center w-full px-4 py-2 6">
+          <BackButton />
+        </div>
         <h1
           className="text-teal-500 text-8xl font-bold text-center mt-10 mb-10 py-8 "
           style={{ textShadow: "4px 4px 4px rgba(0, 0, 0, 0.5)" }}
