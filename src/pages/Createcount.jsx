@@ -11,8 +11,9 @@ function Createcount() {
   const [Email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     const hasUppercase = /[A-Z]/.test(Password);
     const hasNumber = /[0-9]/.test(Password);
 
@@ -22,6 +23,25 @@ function Createcount() {
     }
 
     setPasswordError("");
+
+    try {
+      const response = await api.post("/usuarios", {
+        nome: Name,
+        email: Email,
+        senha: Password,
+      });
+
+      alert("Conta criada com sucesso!");
+      console.log(response.data);
+
+      // Limpa os campos
+      setName("");
+      setEmail("");
+      setPassword("");
+    } catch (error) {
+      console.error("Erro ao criar conta:", error);
+      alert("Erro ao criar conta. Verifique os dados.");
+    }
   };
   let users = [];
   async function getusers(params) {

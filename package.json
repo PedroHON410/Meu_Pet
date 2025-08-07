@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -33,5 +34,17 @@
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.10",
     "vite": "^5.4.19"
-  }
+  },
+  "description": "Meu Pet é um projeto pessoal e 100% autoral. Ele começou como um aplicativo, mas estou atualmente adaptando-o para funcionar como um site — com planos futuros para voltar ao formato de app também.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroHON410/Meu_Pet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroHON410/Meu_Pet/issues"
+  },
+  "homepage": "https://github.com/PedroHON410/Meu_Pet#readme"
 }
