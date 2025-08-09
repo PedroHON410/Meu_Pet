@@ -1,9 +1,8 @@
 import express from "express";
-import { PrismaClient } from "../src/generated/prisma";
+import pkg from "@prisma/client";
+const { PrismaClient } = pkg;
 
-// Create a new PrismaClient instance
 const prisma = new PrismaClient();
-
 // Initialize Express application
 const app = express();
 
@@ -23,10 +22,10 @@ app.post("/usuarios", async (req, res) => {
       password: req.body.password,
     },
   });
-  res.status(201).json(users);
+  res.status(201).json(newUser);
 });
 
-app.get("/usuarios", (req, res) => {
-  res.status(200).json(users);
+app.get("/usuarios", async (req, res) => {
+  const usuarios = await prisma.user.findMany();
+  res.status(200).json(usuarios);
 });
-app.listen(3000);
