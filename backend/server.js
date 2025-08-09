@@ -1,10 +1,28 @@
 import express from "express";
-import { use } from "react";
+import { PrismaClient } from "../src/generated/prisma";
+
+// Create a new PrismaClient instance
+const prisma = new PrismaClient();
+
+// Initialize Express application
 const app = express();
+
+// Informs that the "app" is an application for "json
 app.use(express.json());
+
+// Define a simple in-memory array to store users
 const users = [];
-app.post("/usuarios", (req, res) => {
-  users.push(req.body);
+
+// Define routes for user management and create a new users
+app.post("/usuarios", async (req, res) => {
+  // Asynchronous information that will return
+  await prisma.user.create({
+    data: {
+      name: req.body.name,
+      email: req.body.email,
+      password: req.body.password,
+    },
+  });
   res.status(201).json(users);
 });
 
