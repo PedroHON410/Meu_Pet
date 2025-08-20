@@ -56,11 +56,12 @@ function Createcount() {
 
   return (
     <div className="bg-gradient-to-l from-yellow-400 via-yellow-500 to-orange-400 min-h-screen w-screen flex flex-col items-center">
-      <form onSubmit={handleSubmit} className="w-full max-w-md">
-        <div className="flex justify-between items-center w-full px-4 py-2">
+      <header className="left-0 top-0 w-full flex justify-between items-center p-4">
+        <div>
           <BackButton />
         </div>
-
+      </header>
+      <form onSubmit={handleSubmit} className="w-full max-w-md">
         <h1
           className="text-teal-500 text-8xl font-bold text-center mt-10 mb-10 py-8"
           style={{ textShadow: "4px 4px 4px rgba(0, 0, 0, 0.5)" }}
